@@ -1,20 +1,45 @@
-// Flutter web plugin registrant file.
-//
-// Generated file. Do not edit.
-//
+# This file tracks properties of this Flutter project.
+# Used by Flutter tool to assess capabilities and perform upgrades etc.
+#
+# This file should be version controlled and should not be manually edited.
 
-// @dart = 2.13
-// ignore_for_file: type=lint
+version:
+  revision: "8b872868494e429d94fa06dca855c306438b22c0"
+  channel: "stable"
 
-import 'package:audioplayers_web/audioplayers_web.dart';
-import 'package:flutter_tts/flutter_tts_web.dart';
-import 'package:shared_preferences_web/shared_preferences_web.dart';
-import 'package:flutter_web_plugins/flutter_web_plugins.dart';
+project_type: app
 
-void registerPlugins([final Registrar? pluginRegistrar]) {
-  final Registrar registrar = pluginRegistrar ?? webPluginRegistrar;
-  AudioplayersPlugin.registerWith(registrar);
-  FlutterTtsPlugin.registerWith(registrar);
-  SharedPreferencesPlugin.registerWith(registrar);
-  registrar.registerMessageHandler();
-}
+# Tracks metadata for the flutter migrate command
+migration:
+  platforms:
+    - platform: root
+      create_revision: 8b872868494e429d94fa06dca855c306438b22c0
+      base_revision: 8b872868494e429d94fa06dca855c306438b22c0
+    - platform: android
+      create_revision: 8b872868494e429d94fa06dca855c306438b22c0
+      base_revision: 8b872868494e429d94fa06dca855c306438b22c0
+    - platform: ios
+      create_revision: 8b872868494e429d94fa06dca855c306438b22c0
+      base_revision: 8b872868494e429d94fa06dca855c306438b22c0
+    - platform: linux
+      create_revision: 8b872868494e429d94fa06dca855c306438b22c0
+      base_revision: 8b872868494e429d94fa06dca855c306438b22c0
+    - platform: macos
+      create_revision: 8b872868494e429d94fa06dca855c306438b22c0
+      base_revision: 8b872868494e429d94fa06dca855c306438b22c0
+    - platform: web
+      create_revision: 8b872868494e429d94fa06dca855c306438b22c0
+      base_revision: 8b872868494e429d94fa06dca855c306438b22c0
+    - platform: windows
+      create_revision: 8b872868494e429d94fa06dca855c306438b22c0
+      base_revision: 8b872868494e429d94fa06dca855c306438b22c0
+
+  # User provided section
+
+  # List of Local paths (relative to this file) that should be
+  # ignored by the migrate tool.
+  #
+  # Files that are not part of the templates will be ignored by default.
+  unmanaged_files:
+    - 'lib/main.dart'
+    - 'ios/Runner.xcodeproj/project.pbxproj'
